@@ -15,6 +15,26 @@ img {
     border-radius: 50%;
 }
 
+.education-content img {
+    border-radius: 15px;
+}
+
+/*For hobbies and interest*/
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    --bg-color: #564820;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 :root {
     --bg-color: #564820;
     --second-bg-color: #765a30;
@@ -25,6 +45,7 @@ img {
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 body {
@@ -225,7 +246,7 @@ section {
 .home-sci {
     position: absolute;
     bottom: 4rem;
-    width: 170px;
+    width: 230px;
     display: flex;
     justify-content: space-between;
 }
@@ -686,6 +707,10 @@ span {
     background: var(--second-bg-color);
 }
 
+.contact-info {
+    margin-bottom: 50px;
+}
+
 .contact-info-content .content {
     position: relative;
     padding: 1.5rem;
@@ -747,6 +772,8 @@ span {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+    min-height: 5vh;
+    border: solid;
 }
 
 .footer-text,
@@ -759,6 +786,7 @@ span {
 }
 
 .footer-iconTop a {
+
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -770,6 +798,12 @@ span {
     z-index: 1;
     overflow: hidden;
 }
+
+.footer-iconTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .footer-iconTop a::before {
     content: '';
